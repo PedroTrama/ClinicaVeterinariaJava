@@ -11,10 +11,6 @@ import java.util.logging.Logger;
 public class EspecieDAO extends DAO {
     private static EspecieDAO instance;
 
-    public static Object getIstance() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
     private EspecieDAO() {
         getConnection();
         createTable();

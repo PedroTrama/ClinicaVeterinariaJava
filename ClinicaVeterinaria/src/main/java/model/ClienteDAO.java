@@ -11,10 +11,6 @@ import java.util.logging.Logger;
 public class ClienteDAO extends DAO {
     private static ClienteDAO instance;
 
-    public static Object getIstance() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
     private ClienteDAO() {
         getConnection();
         createTable();

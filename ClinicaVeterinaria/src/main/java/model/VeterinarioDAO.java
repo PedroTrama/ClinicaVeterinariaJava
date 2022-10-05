@@ -11,10 +11,6 @@ import java.util.logging.Logger;
 public class VeterinarioDAO extends DAO {
     private static VeterinarioDAO instance;
 
-    public static Object getIstance() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
     private VeterinarioDAO() {
         getConnection();
         createTable();

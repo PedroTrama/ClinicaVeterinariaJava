@@ -113,7 +113,7 @@ public abstract class DAO {
                     + "hora VARCHAR, \n"
                     + "idAnimal INTEGER, \n"
                     + "idVeterinario INTEGER, \n"
-                    + "idTratamento INTEGER; \n");
+                    + "idTratamento INTEGER); \n");
             executeUpdate(stmt);            
              // Table exame:
             stmt = DAO.getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS exame( \n"
@@ -123,7 +123,7 @@ public abstract class DAO {
             executeUpdate(stmt);      
            
             // Padrão para especie
-            stmt = DAO.getConnection().prepareStatement("INSERT OR IGNORE INTO especie (id, nome) VALUES (1, 'Cachorro')");
+            stmt = DAO.getConnection().prepareStatement("INSERT OR IGNORE INTO especie (idEspecie, nome) VALUES (1, 'Cachorro')");
             executeUpdate(stmt);
             return true;
         } catch (SQLException ex) {

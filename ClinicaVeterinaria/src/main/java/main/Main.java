@@ -1,12 +1,14 @@
 package main;
 
 import model.AnimalDAO;
+import model.ClienteDAO;
+import model.EspecieDAO;
 
 public class Main {
     public static void main(String[] args) {        
      
+        System.out.println(ClienteDAO.getInstance().retrieveAll());
         System.out.println(AnimalDAO.getInstance().retrieveAll());
-        
     }
 }
 
@@ -28,3 +30,5 @@ if(!jTextField1.getText()isEmpty()){
         }
     }
 }*/
+
+//ClienteDAO.getInstance().create("Plinio", "Rua dos Bobos", "707070", "435678", "email@email.com");

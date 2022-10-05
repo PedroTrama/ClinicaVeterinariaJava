@@ -11,10 +11,6 @@ import java.util.logging.Logger;
 public class AnimalDAO extends DAO {
     private static AnimalDAO instance;
 
-    public static Object getIstance() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
     private AnimalDAO() {
         getConnection();
         createTable();

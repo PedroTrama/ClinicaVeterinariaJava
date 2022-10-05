@@ -1,2 +1,2 @@
 # ClinicaVeterinariaJava
-Projeto me Java do zero para a disciplina TT001 do segundo semestre de 2022
+Java project to develop a PetShop management system

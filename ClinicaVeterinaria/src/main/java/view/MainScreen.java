@@ -116,6 +116,11 @@ public class MainScreen extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jRadioButton1.setText("Cadastro Clientes");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
 
         jRadioButton6.setText("Cadastro Animais");
 
@@ -128,6 +133,11 @@ public class MainScreen extends javax.swing.JFrame {
         jButton2.setText("Novo");
 
         jButton3.setText("Apaga");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Busca:");
 
@@ -242,6 +252,14 @@ public class MainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -300,3 +318,21 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
+
+
+/*
+NA MAIN DA VIEW
+if(!jTextField1.getText()isEmpty()){
+    int idCliente = Integer.parseInt(jTextField1.getText());
+    List<Animal> animais = AnimalDAO.getInstance().retrieveByIdCliente(idCliente);
+    for(Animal a : animais){
+        jTextArea1.append(a.getNome()+"\n");
+    } 
+    else {
+        List<Cliente> clientes = ClienteDAO.getInstance().retrieveAll();
+        
+        for(Cliente c : cliente){
+            jTextArea1.append(c.getId()+") "+c.getNome()+"\n")
+        }
+    }
+}*/

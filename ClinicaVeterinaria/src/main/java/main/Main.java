@@ -6,29 +6,19 @@ import model.EspecieDAO;
 
 public class Main {
     public static void main(String[] args) {        
-     
+       
+        //ClienteDAO.getInstance().create("Pedro", "Rua Dona Antonia", "13484400", "19996732162", "pedrotrama29@gmail.com");
+        System.out.println("------------------CLIENTES---------------------------------");
+        System.out.println("------------------Retrieve All Clientes---------------------");
         System.out.println(ClienteDAO.getInstance().retrieveAll());
+        System.out.println("------------------Retrieve by id-----------------------------");
+        System.out.println(ClienteDAO.getInstance().retrieveById(8));
+        System.out.println("------------------ANIMAIS---------------------------------");
+        //System.out.println("------------------Create---------------------------------");
+        //AnimalDAO.getInstance().create("Leo", 11, "M", 1, "");
+        System.out.println("------------------Retrieve All---------------------------------");
         System.out.println(AnimalDAO.getInstance().retrieveAll());
+        System.out.println("------------------Retrieve By Id---------------------------------");
+        System.out.println(AnimalDAO.getInstance().retrieveById(4));
     }
 }
-
-//https://www.youtube.com/watch?v=I1gFwAnPRF4&list=PLohEp4M4wZUrm2BjDMqayJ4vEsgnOBhO4&index=7
-
-/*
-NA MAIN DA VIEW
-if(!jTextField1.getText()isEmpty()){
-    int idCliente = Integer.parseInt(jTextField1.getText());
-    List<Animal> animais = AnimalDAO.getInstance().retrieveByIdCliente(idCliente);
-    for(Animal a : animais){
-        jTextArea1.append(a.getNome()+"\n");
-    } 
-    else {
-        List<Cliente> clientes = ClienteDAO.getInstance().retrieveAll();
-        
-        for(Cliente c : cliente){
-            jTextArea1.append(c.getId()+") "+c.getNome()+"\n")
-        }
-    }
-}*/
-
-//ClienteDAO.getInstance().create("Plinio", "Rua dos Bobos", "707070", "435678", "email@email.com");
